@@ -1,6 +1,6 @@
+import { sum } from "../sum";
 
-import {sum} from "../sum";
-
-test("Check sum of 2 positive nos", () => {
-    expect(sum(2,5)).toBe(7);
+test("Check sum of 2 positive nos description of testing", () => {
+  const result = sum(2, 5);
+  expect(result).toBe(7);
 });

@@ -720,6 +720,6 @@ $RefreshReg$(_c1, "InstaMart");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["gzT0l","1xC6H"], null, "parcelRequire94c2")
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["gzT0l","1xC6H"], null, "parcelRequire94c2")
 
 //# sourceMappingURL=Instamart.0762395e.js.map
