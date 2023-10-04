@@ -41139,85 +41139,93 @@ var prevRefreshSig = window.$RefreshSig$;
 $parcel$ReactRefreshHelpers$ee46.prelude(module);
 
 try {
+// import linkedin from "../images/linkedin.png";
+// import git from "../images/git.png";
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _linkedinPng = require("../images/linkedin.png");
-var _linkedinPngDefault = parcelHelpers.interopDefault(_linkedinPng);
-var _gitPng = require("../images/git.png");
-var _gitPngDefault = parcelHelpers.interopDefault(_gitPng);
 const Contact = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "contact",
-            children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                    className: "developer",
-                    children: " Contact Details"
-                }, void 0, false, {
-                    fileName: "src/components/Contact.js",
-                    lineNumber: 7,
-                    columnNumber: 9
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                    children: "rahulps995@gmail.com"
-                }, void 0, false, {
-                    fileName: "src/components/Contact.js",
-                    lineNumber: 8,
-                    columnNumber: 9
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                    children: "+919744187790"
-                }, void 0, false, {
-                    fileName: "src/components/Contact.js",
-                    lineNumber: 9,
-                    columnNumber: 9
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                    href: "https://www.linkedin.com/in/rahul-p-s/",
-                    target: "_blank",
-                    children: [
-                        "Connect With Me On ",
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                            className: "linkedIn",
-                            src: (0, _linkedinPngDefault.default)
-                        }, void 0, false, {
-                            fileName: "src/components/Contact.js",
-                            lineNumber: 11,
-                            columnNumber: 30
-                        }, undefined)
-                    ]
-                }, void 0, true, {
-                    fileName: "src/components/Contact.js",
-                    lineNumber: 10,
-                    columnNumber: 9
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                    href: "https://github.com/RahulPSkadumeni",
-                    target: "_blank",
-                    children: [
-                        "Github profile",
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                            className: "linkedIn",
-                            src: (0, _gitPngDefault.default)
-                        }, void 0, false, {
-                            fileName: "src/components/Contact.js",
-                            lineNumber: 15,
-                            columnNumber: 11
-                        }, undefined)
-                    ]
-                }, void 0, true, {
-                    fileName: "src/components/Contact.js",
-                    lineNumber: 13,
-                    columnNumber: 9
-                }, undefined)
-            ]
-        }, void 0, true, {
-            fileName: "src/components/Contact.js",
-            lineNumber: 6,
-            columnNumber: 7
-        }, undefined)
-    }, void 0, false);
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "contact",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                        className: "developer",
+                        children: " Contact Details"
+                    }, void 0, false, {
+                        fileName: "src/components/Contact.js",
+                        lineNumber: 7,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                        children: "rahulps995@gmail.com"
+                    }, void 0, false, {
+                        fileName: "src/components/Contact.js",
+                        lineNumber: 8,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                        children: "+919744187790"
+                    }, void 0, false, {
+                        fileName: "src/components/Contact.js",
+                        lineNumber: 9,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                        href: "https://www.linkedin.com/in/rahul-p-s/",
+                        target: "_blank",
+                        children: "Connect With Me On"
+                    }, void 0, false, {
+                        fileName: "src/components/Contact.js",
+                        lineNumber: 10,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                        href: "https://github.com/RahulPSkadumeni",
+                        target: "_blank",
+                        children: "Github profile"
+                    }, void 0, false, {
+                        fileName: "src/components/Contact.js",
+                        lineNumber: 14,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/Contact.js",
+                lineNumber: 6,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                type: "text",
+                name: "",
+                id: "",
+                placeholder: "Name"
+            }, void 0, false, {
+                fileName: "src/components/Contact.js",
+                lineNumber: 19,
+                columnNumber: 7
+            }, undefined),
+            " ",
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                type: "text",
+                name: "",
+                id: "",
+                placeholder: "email"
+            }, void 0, false, {
+                fileName: "src/components/Contact.js",
+                lineNumber: 20,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                children: "Submit"
+            }, void 0, false, {
+                fileName: "src/components/Contact.js",
+                lineNumber: 21,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true);
 };
 _c = Contact;
 exports.default = Contact;
@@ -41229,13 +41237,7 @@ $RefreshReg$(_c, "Contact");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","../images/linkedin.png":"dVV1M","../images/git.png":"iY6Ls","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"dVV1M":[function(require,module,exports) {
-module.exports = require("b74f6f33f7eb0a95").getBundleURL("aXMci") + "linkedin.f0207ceb.png" + "?" + Date.now();
-
-},{"b74f6f33f7eb0a95":"lgJ39"}],"iY6Ls":[function(require,module,exports) {
-module.exports = require("deb4eead0094341b").getBundleURL("aXMci") + "git.5e03f4ff.png" + "?" + Date.now();
-
-},{"deb4eead0094341b":"lgJ39"}],"8PuJ6":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"8PuJ6":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$40d6 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;

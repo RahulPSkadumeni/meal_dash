@@ -97,3 +97,137 @@ test("Check sum of 2 positive nos description of testing", () => {
 ```
 
 ## Testing contact component
+
+inside contact.test.js
+
+```
+import { render, screen } from "@testing-library/react";
+import Contact from "../Contact";
+
+test("should load contact as component", () => {
+  render(<Contact />);
+  const heading = screen.getAllByRole("heading");
+  expect(heading).toBeInTheDocument();
+});
+
+```
+
+## enabling Jsx for test
+
+by adding @babel/preset-react library
+
+```
+npm i -d @babel/preset-react
+```
+
+include @babel/preset-react inside babel config
+
+now babel.config.js look like
+
+```
+module.exports = {
+  presets: [
+    ["@babel/preset-env", { targets: { node: "current" } }],
+    ["@babel/preset-react", { runtime: "automatic" }],
+  ],
+};
+
+```
+
+then run test
+
+const heading = screen.getAllByRole("heading"); // find it here is heading in the rendered component
+
+> weather the button is there ore note?
+
+```
+test("should load contact as component", () => {
+  render(<Contact />);
+  const heading = screen.getByRole("heading");
+  expect(heading).toBeInTheDocument();
+  // expect(heading.length).toBeGreaterThan(0);
+});
+
+test("should load button inside component", () => {
+  render(<Contact />);
+  const button = screen.getByRole("button");
+  expect(button).toBeInTheDocument();
+  // expect(heading.length).toBeGreaterThan(0);
+});
+
+```
+
+```
+
+## instead of test you can wite it
+
+it("should should load 2 input boxes", () => {
+  render(<Contact />);
+  //Querying
+  const inputBoxes = screen.getAllByRole("textbox");
+  //assertion
+  expect(inputBoxes.length).toBe(2);
+});
+
+```
+
+different testing examples
+
+```
+
+
+test("should load contact as component", () => {
+  render(<Contact />);
+  const heading = screen.getByRole("heading");
+  expect(heading).toBeInTheDocument();
+  // expect(heading.length).toBeGreaterThan(0);
+});
+
+test("should load button inside component", () => {
+  //by role
+  render(<Contact />);
+  const button = screen.getByRole("button");
+  expect(button).toBeInTheDocument();
+  // expect(heading.length).toBeGreaterThan(0);
+});
+
+test("should text matches inside component", () => {
+  //by text
+  render(<Contact />);
+  const button = screen.getByText("Submit");
+  expect(button).toBeInTheDocument();
+  // expect(heading.length).toBeGreaterThan(0);
+});
+
+test("should text matches for place holder", () => {
+  render(<Contact />);
+  const inputName = screen.getByPlaceholderText("Name");
+  expect(inputName).toBeInTheDocument();
+  // expect(heading.length).toBeGreaterThan(0);
+});
+
+  // role of input box is textbox
+test("should should load 2 input boxes", () => {
+  render(<Contact />);
+  //Querying
+  const inputBoxes = screen.getAllByRole("textbox");
+
+  //assertion
+  expect(inputBoxes.length).toBe(2);
+});
+
+//instead of test you can wite it
+
+it("should should load 2 input boxes", () => {
+  render(<Contact />);
+  //Querying
+  const inputBoxes = screen.getAllByRole("textbox");
+  //assertion
+  expect(inputBoxes.length).toBe(2);
+});
+
+```
+
+## adding to git ignore
+
+/coverage folder can add to git ignore

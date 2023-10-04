@@ -5,7 +5,7 @@ node_modules
 .parcel-cache
 
 # Ignore parcel-cache folder
-coverage
+/coverage
 
 # Ignore dist folder
  dist
